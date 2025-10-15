@@ -1,1 +1,1 @@
-# SysMoon
+# 🌙 SysMoon — Lightweight System Monitor
