@@ -1,20 +1,5 @@
 -- SysMoon: A lightweight system monitor
 local commands = require("sysmoon.commands")
-local display = require("sysmoon.display")
-
-local function run_command(command)
-    if command == "snapshot" then
-        display.snapshot()
-    elseif command == "monitor" then
-        display.monitor()
-    elseif command == "history" then
-        display.history()
-    elseif command == "all" then
-        display.all()
-    else
-        print("This should never happen.")
-    end
-end
 
 local user_command = arg[1]
 
@@ -27,6 +12,4 @@ if not commands.is_available(user_command) then
     os.exit(1)
 end
 
-run_command(user_command)
-
-print("Executing command:", user_command)
+commands.execute(user_command)
