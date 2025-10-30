@@ -31,4 +31,9 @@ function Commands.execute(command)
     handler()
 end
 
+function Commands.available_commands_suggestion()
+    return string.format("Available commands are: %s",
+        Commands.list_available_as_string())
+end
+
 return Commands

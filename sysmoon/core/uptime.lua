@@ -2,10 +2,10 @@ local Uptime = {}
 
 local function get_uptime_result()
     local system_command_string = "uptime -p"
-    local read_option_all = "*a"
+    local all = "*a"
     local handle = io.popen(system_command_string)
     assert(handle, "Failed to execute system command")
-    local result = handle:read(read_option_all)
+    local result = handle:read(all)
     handle:close()
     return result
 end
