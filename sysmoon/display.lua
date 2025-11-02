@@ -19,7 +19,7 @@ function Display.snapshot()
     local uptime_data = uptime.get()
     local uptime_info = string.format(
         "Uptime: %s hours, %s minutes",
-        uptime_data.hours,
+        uptime_data.hours or 0,
         uptime_data.minutes)
 
     print(title)
