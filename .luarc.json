@@ -1,0 +1,24 @@
+{
+    "workspace.library": [
+        "./.rocks/share/lua/5.1"
+    ],
+    "workspace": {
+        "ignoreDir": [
+            ".rocks",
+            "*.rock"
+        ],
+        "ignoreSubmodules": true
+    },
+    "diagnostics.globals": [
+        "describe",
+        "it",
+        "before_each",
+        "after_each",
+        "setup",
+        "teardown",
+        "assert",
+        "assert.truthy",
+        "spy",
+        "stub"
+    ]
+}
