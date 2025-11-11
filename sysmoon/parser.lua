@@ -40,4 +40,13 @@ function Parser.parse_free(result)
     }
 end
 
+function Parser.parse_uptime(result)
+    local hours = result:match("(%d+)%s+hour")
+    local minutes = result:match("(%d+)%s+minute")
+    return {
+        hours = hours and tonumber(hours),
+        minutes = minutes and tonumber(minutes)
+    }
+end
+
 return Parser
