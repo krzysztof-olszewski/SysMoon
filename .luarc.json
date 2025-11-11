@@ -20,5 +20,10 @@
         "assert.truthy",
         "spy",
         "stub"
+    ],
+    "diagnostics.disable": [
+        "undefined-field",
+        "duplicate-set-field",
+        "redefined-local"
     ]
 }
